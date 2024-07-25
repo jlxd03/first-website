@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy treats!</title>
+</head>
+<body>
+
+    <h1>
+        Order Details
+    </h1>
+
+    <form action="index.php" method="post" enctype="multipart/form-data">
+
+        <label for="name">Name:</label>
+        <input type="text" required maxlength="20" placeholder="Captain Barbel"> 
+
+        <br>
+
+        <label for="name">Email:</label>
+        <input type="email" required placeholder="captain.barbel@gmail.com">
+
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" placeholder="09123457890" pattern="[0-9]{11}" maxlength="11" required>
+
+        <br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" min="0" max="99">
+
+        <br>
+
+        <label for="title">Title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" name="Title">
+        <label for="Mr.">Ms.</label>
+        <input type="radio" name="Title"> 
+        <label for="Mr.">Lodi.</label>
+        <input type="radio" name="Title">
+        <label for="Mr.">Kyah.</label>
+        <input type="radio" name="Title">
+
+        <br>
+
+        <label for="payment">Payment Method:</label>
+        <select>
+            <option value="credit card">Credit Card</option>
+            <option value="debit card">Debit Card</option>
+            <option value="gcash">Jeecash</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="kidney">Kidney</option>
+            <option value="cash">COD</option>
+        </select>
+
+        <br>
+
+        <label for="comment">Special Instructions:</label>
+        <textarea name="Special Instructions"></textarea>
+        
+        <br><br><br>
+
+        <input type="submit"> 
+        <br><br>
+        <input type="reset">
+
+
+    </form>
+    
+</body>
+</html>
